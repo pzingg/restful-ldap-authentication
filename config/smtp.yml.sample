@@ -1,0 +1,14 @@
+development:
+  address: localhost
+  port: 25
+  domain: example.com
+  authentication: login 
+  user_name: admin
+  password: adminpw 
+production:
+  address: localhost
+  port: 25
+  domain: example.com
+  authentication: login 
+  user_name: admin
+  password: adminpw 

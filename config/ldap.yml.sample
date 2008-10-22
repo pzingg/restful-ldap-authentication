@@ -1,0 +1,26 @@
+development:
+  host: localhost
+  port: 389
+  method: :plain
+  timeout: 10
+  base: dc=ldap,dc=example,dc=com
+  bind_dn: cn=Manager,dc=ldap,dc=example,dc=com
+  password: rootpw
+
+test:
+  host: localhost
+  port: 389
+  method: :plain
+  timeout: 10
+  base: dc=webauth-t,dc=kentfieldschools,dc=org
+  bind_dn: cn=Manager,dc=ldap,dc=example,dc=com
+  password: rootpw
+
+production:
+  host: localhost
+  port: 389
+  method: :plain
+  timeout: 10
+  base: dc=ldap,dc=example,dc=com
+  bind_dn: cn=Manager,dc=ldap,dc=example,dc=com
+  password: rootpw
