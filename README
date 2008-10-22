@@ -1,0 +1,8 @@
+restful-ldap-authentication
+
+use openldap database behind a restful authentication front end
+allow classes of users to change their openldap crypted passwords
+create temporary passwords for users who have forgotten them
+
+uses ActiveLdap gem and plugin for ldap connection
+ActiveRecord-based user database in sql caches ldap lookups
