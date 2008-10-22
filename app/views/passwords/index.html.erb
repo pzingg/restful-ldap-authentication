@@ -1,0 +1,15 @@
+<% title('User Profile', false) -%>
+<h2>Kentweb User Profile</h2>
+<% if logged_in? -%>
+<p>You are currently logged in as <%=h current_user.login %></p>
+<% if current_user.can_change_password? -%>
+<p>Want to change your password?  <%= link_to 'Change password', changepw_url %></p>
+<p>Lost your password?  <%= link_to 'Request a new password', resetpw_url %></p>
+<% else -%>
+<p>This user cannot change passwords.  Please contact webmaster@kentfieldschools.org for more information.</p>
+<% end -%>
+<p><%= link_to 'Log out', logout_url %></p>
+<% else -%>
+<p>Want to change your password?  <%= link_to 'Log in and change password', changepw_url %></p>
+<p>Lost your password?  <%= link_to 'Request a new password', resetpw_url %></p>
+<% end -%>

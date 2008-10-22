@@ -1,0 +1,17 @@
+<% title('Reset Password', false) -%>
+<h2>Request a new temporary password</h2>
+
+<p>Type in your email address and the user name associated with it (if you know it), 
+  click the "Request a temporary password" button,
+  and you will be sent a link that will let you change the password.</p>
+  
+<% form_for :reset_user, :url => resetpw_url do |f| -%>
+
+<p><%= label_tag 'email', 'Your email address (required)' %><br/>
+<%= f.text_field :email %></p>
+
+<p><%= label_tag 'login', 'User name (optional)' %><br/>
+<%= f.text_field :login %></p>
+
+<p><%= submit_tag 'Request a temporary password' %></p>
+<% end -%>
